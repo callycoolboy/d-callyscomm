@@ -1,8 +1,8 @@
 
 function codeAddress() {
-$("#page2").hide();
+//$("#page2").hide();
    onLoad();         
-  $( "#info" ).fadeOut( 100 ).delay( 15000 ).fadeIn( 3000 );
+  //$( "#info" ).fadeOut( 100 ).delay( 15000 ).fadeIn( 3000 );
  
 var duration = 7000;
     setTimeout(function() {
@@ -14,6 +14,7 @@ $( "#lgif" ).fadeIn( 1000 );
 setTimeout(function() {
     $("#carl2").fadeOut( 1500 );
     $("#lgif").fadeOut( 1500 );
+    $("#info").show();
 }, 15000);
 
 var duration2 = 70000;
