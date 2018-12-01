@@ -55,7 +55,15 @@ function checkNetConnection(){
 	  swal("Network Error!!!", "Check Internet Connection Or check if app is running in Latest Version and Try Again.", "error");
 	  var dura = 3000;
     setTimeout(function() {
-	  navigator.app.exitApp();
+	  var r = confirm("Would you like to switch to OFFLINE MODE?.\nClick OK to continue");
+	  if (r == true) {
+    window.location='index2.html';
+   return true;
+  }
+ else {
+navigator.app.exitApp();
+    return false;
+}
 	  }, dura);
    return false;
   }
@@ -64,7 +72,15 @@ function checkNetConnection(){
 	  swal("Network Error!!!", "Check Internet Connection Or check if app is running in Latest Version and Try Again.", "error");
 	  var dura = 3000;
     setTimeout(function() {
-	  navigator.app.exitApp();
+	   var r = confirm("Would you like to switch to OFFLINE MODE?.\nClick OK to continue");
+	  if (r == true) {
+    window.location='index2.html';
+   return true;
+  }
+ else {
+navigator.app.exitApp();
+    return false;
+}
 	  }, dura);
    return false;
  }
