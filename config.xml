@@ -1,5 +1,5 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.dcallyscomm.app" version="1.0.0" android-versionCode="10000" ios-CFBundleVersion="1.0.0">
-  <name>D_CALLYs Communications</name>
+  <name>D-CALLYs Communications</name>
     <description>
         No 1 Data Purchase, Cable Subscriptions, Gift cards and Crypto Trading Platform.
     </description>
@@ -7,9 +7,9 @@
         CALLYs Global Concept
     </author>
   <content src="index.html"/>
+  <preference name="android-build-tool" value="gradle" /> 
   <preference name='phonegap-version' value='cli-7.0.1' />
 <preference name='pgb-builder-version' value='2' />
-  <preference name="android-build-tool" value="gradle" /> 
 <preference name="android-minSdkVersion" value="15" />
   <preference name="android-targetSdkVersion" value="26"/> //android 4.2
 <preference name="loadUrlTimeoutValue" value="60000" />
