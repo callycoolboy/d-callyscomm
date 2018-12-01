@@ -1,0 +1,93 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.dcallyscomm.app" version="1.0.0" android-versionCode="10000" ios-CFBundleVersion="1.0.0">
+  <name>D_CALLYs Communications</name>
+    <description>
+        No 1 Data Purchase, Cable Subscriptions, Gift cards and Crypto Trading Platform.
+    </description>
+    <author email="support@callysconcept.com" href="https://callysconcept.com">
+        CALLYs Global Concept
+    </author>
+  <content src="index.html"/>
+  <preference name='phonegap-version' value='cli-7.0.1' />
+<preference name='pgb-builder-version' value='2' />
+  <preference name="android-build-tool" value="gradle" /> 
+<preference name="android-minSdkVersion" value="15" />
+  <preference name="android-targetSdkVersion" value="26"/> //android 4.2
+<preference name="loadUrlTimeoutValue" value="60000" />
+  <plugin name="onesignal-cordova-plugin" source="npm" spec="^2.4.1" />
+  <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.2.4"/>
+  <plugin name="cordova-plugin-device" source="npm" spec="~1.1.6"/>
+  <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.3.3"/>
+  <plugin name="cordova-plugin-geolocation" source="npm" spec="~2.4.3"/>
+  <plugin name="cordova-plugin-globalization" source="npm" spec="~1.0.7"/>
+  <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.7.1"/>
+  <plugin name="cordova-plugin-network-information" source="npm" spec="~1.3.3"/>
+  <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.5"/>
+  <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
+    <preference name="DisallowOverscroll" value="true"/>
+    <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  
+  <platform name="android">
+    <allow-intent href="market:*"/>
+    <!-- ONESIGNAL-->
+ <resource-file src="platforms/android/drawable-mdpi/ic_stat_onesignal_default.png" target="res/drawable-mdpi/ic_stat_onesignal_default.png" />
+    <resource-file src="platforms/android/drawable-hdpi/ic_stat_onesignal_default.png" target="res/drawable-hdpi/ic_stat_onesignal_default.png" />
+    <resource-file src="platforms/android/drawable-xhdpi/ic_stat_onesignal_default.png" target="res/drawable-xhdpi/ic_stat_onesignal_default.png" />
+    <resource-file src="platforms/android/drawable-xxhdpi/ic_stat_onesignal_default.png" target="res/drawable-xxhdpi/ic_stat_onesignal_default.png" />
+    <resource-file src="platforms/android/drawable-xxxhdpi/ic_stat_onesignal_default.png" target="res/drawable-xxxhdpi/ic_stat_onesignal_default.png" />
+    <icon src="res/icon/android/mipmap-mdpi/d_callyscomm.png" density="mdpi"/>
+    <icon src="res/icon/android/mipmap-hdpi/d_callyscomm.png" density="hdpi"/>
+    <icon src="res/icon/android/mipmap-xhdpi/d_callyscomm.png" density="xhdpi"/>
+    <icon src="res/icon/android/mipmap-xxhdpi/d_callyscomm.png" density="xxhdpi"/>
+    <icon src="res/icon/android/mipmap-xxxhdpi/d_callyscomm.png" density="xxxhdpi"/>
+    
+
+      </platform>
+  <platform name="ios">
+     <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+    <icon src="res/icon/ios/icon.png" platform="ios" width="57" height="57"/>
+    <icon src="res/icon/ios/icon@2x.png" platform="ios" width="114" height="114"/>
+    <icon src="res/icon/ios/icon-40.png" platform="ios" width="40" height="40"/>
+    <icon src="res/icon/ios/icon-40@2x.png" platform="ios" width="80" height="80"/>
+    <icon src="res/icon/ios/icon-50.png" platform="ios" width="50" height="50"/>
+    <icon src="res/icon/ios/icon-50@2x.png" platform="ios" width="100" height="100"/>
+    <icon src="res/icon/ios/icon-60.png" platform="ios" width="60" height="60"/>
+    <icon src="res/icon/ios/icon-60@2x.png" platform="ios" width="120" height="120"/>
+    <icon src="res/icon/ios/icon-60@3x.png" platform="ios" width="180" height="180"/>
+    <icon src="res/icon/ios/icon-72.png" platform="ios" width="72" height="72"/>
+    <icon src="res/icon/ios/icon-72@2x.png" platform="ios" width="144" height="144"/>
+    <icon src="res/icon/ios/icon-76.png" platform="ios" width="76" height="76"/>
+    <icon src="res/icon/ios/icon-76@2x.png" platform="ios" width="152" height="152"/>
+    <icon src="res/icon/ios/icon-small.png" platform="ios" width="29" height="29"/>
+    <icon src="res/icon/ios/icon-small@2x.png" platform="ios" width="58" height="58"/>
+    <icon src="res/icon/ios/icon-small@3x.png" platform="ios" width="87" height="87"/>
+  </platform>
+  
+  <platform name="wp8">
+    <icon src="res/icon/wp8/ApplicationIcon.png" platform="wp8" width="99" height="99"/>
+    <icon src="res/icon/wp8/Background.png" platform="wp8" width="159" height="159"/>
+     </platform>
+  
+  <platform name="windows">
+    <icon src="res/icon/windows/Square150x150Logo.scale-100.png" platform="windows" width="150" height="150"/>
+    <icon src="res/icon/windows/Square30x30Logo.scale-100.png" platform="windows" width="30" height="30"/>
+    <icon src="res/icon/windows/StoreLogo.scale-100.png" platform="windows" width="50" height="50"/>
+    <icon src="res/icon/windows/StoreLogo.scale-240.png" platform="windows" width="120" height="120"/>
+    <icon src="res/icon/windows/Square44x44Logo.scale-100.png" platform="windows" width="44" height="44"/>
+    <icon src="res/icon/windows/Square44x44Logo.scale-240.png" platform="windows" width="106" height="106"/>
+    <icon src="res/icon/windows/Square70x70Logo.scale-100.png" platform="windows" width="70" height="70"/>
+    <icon src="res/icon/windows/Square71x71Logo.scale-100.png" platform="windows" width="71" height="71"/>
+    <icon src="res/icon/windows/Square71x71Logo.scale-240.png" platform="windows" width="170" height="170"/>
+    <icon src="res/icon/windows/Square150x150Logo.scale-240.png" platform="windows" width="360" height="360"/>
+    <icon src="res/icon/windows/Square310x310Logo.scale-100.png" platform="windows" width="310" height="310"/>
+    <icon src="res/icon/windows/Wide310x150Logo.scale-100.png" platform="windows" width="310" height="150"/>
+    <icon src="res/icon/windows/Wide310x150Logo.scale-240.png" platform="windows" width="744" height="360"/>
+    </platform>
+  
+</widget>
