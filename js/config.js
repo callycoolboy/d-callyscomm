@@ -56,7 +56,7 @@ function checkNetConnection(){
   } else {
 	  navigator.vibrate(500);
 	  swal("Network Error!!!", "Check Internet Connection Or check if app is running in Latest Version and Try Again.", "error");
-	  var dura = 3000;
+	  var dura = 1000;
     setTimeout(function() {
 	  var r = confirm("Would you like to switch to OFFLINE MODE?.\nClick OK to continue");
 	  if (r == true) {
@@ -73,7 +73,7 @@ navigator.app.exitApp();
  } catch (e) {
 	 navigator.vibrate(500);
 	  swal("Network Error!!!", "Check Internet Connection Or check if app is running in Latest Version and Try Again.", "error");
-	  var dura = 3000;
+	  var dura = 1000;
     setTimeout(function() {
 	   var r = confirm("Would you like to switch to OFFLINE MODE?.\nClick OK to continue");
 	  if (r == true) {
