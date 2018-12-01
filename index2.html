@@ -49,43 +49,7 @@
 	
     <title>CALLYs Store Web App</title>
 	  <link rel="stylesheet" href="css/swiper.min.css?id=1">
-<script>
- function validateForm5(){
- function checkNetConnection(){
-  var xhr = new XMLHttpRequest();
- var file = "https://zamxa.store/themes/images/icons-png/minus-black.png";
- var r = Math.round(Math.random() * 10000);
- xhr.open('HEAD', file + '?subins=' + r, false);
- try {
-  xhr.send();
-  if (xhr.status >= 200 && xhr.status < 304) {
-   return true;
-  } else {
-	  navigator.vibrate(500);
-	  swal("Network Error!!!", "Check Internet Connection Or check if app is running in Latest Version and Try Again.", "error");
-	  var dura = 3000;
-    setTimeout(function() {
-	  navigator.app.exitApp();
-	  }, dura);
-   return false;
-  }
- } catch (e) {
-	 navigator.vibrate(500);
-	  swal("Network Error!!!", "Check Internet Connection Or check if app is running in Latest Version and Try Again.", "error");
-	  var dura = 3000;
-    setTimeout(function() {
-	  navigator.app.exitApp();
-	  }, dura);
-   return false;
- }
-}
-checkNetConnection() ;
- setTimeout(function() {
-window.location="index.html";
-
-}, 3000);
-}
- </script>  
+ 
   <!-- Demo styles -->
  </head>
  <body class="animsition">
@@ -124,7 +88,7 @@ window.location="index.html";
 					<div id="head" data-position="fixed" class=""><ul id="head" class="ui-grid-b">
 					
 						<li style="width:50%" class="ui-block-a"><a href="#" data-icon="home" class="btnn ui-btn-active ui-link ui-btn ui-icon-shop ui-btn-icon-top"><font size="1">Home</font></a></li>
-						<li style="width:50%" class="ui-block-b"><a onclick="return checkNetConnection();" href="#0" data-icon="car" class="btnn buy animsition-link ui-link ui-btn ui-icon-home ui-btn-icon-top"><font size="1">Switch to Online Mood</font></a></li>
+						<li style="width:50%" class="ui-block-b"><a onclick="window.location=index.html;" href="#0" data-icon="car" class="btnn buy animsition-link ui-link ui-btn ui-icon-home ui-btn-icon-top"><font size="1">Switch to Online Mood</font></a></li>
 						
 					</ul></div>
 				</div>
