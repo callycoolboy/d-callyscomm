@@ -40,6 +40,7 @@ if(online) {
 	navigator.vibrate(500);
   alert("Connection Not Available\nCheck Network settings and Try Again!!!");
   navigator.app.exitApp();
+	return false;
 }
 }
 
