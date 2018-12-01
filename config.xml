@@ -13,6 +13,7 @@
   <preference name="android-build-tool" value="gradle" />
 <preference name="android-minSdkVersion" value="15" />
   <preference name="android-targetSdkVersion" value="26"/> //android 4.2
+  <preference name="loadUrlTimeoutValue" value="60000" />
 <plugin name="onesignal-cordova-plugin" source="npm" spec="^2.4.1" />
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.2.4"/>
   <plugin name="cordova-plugin-device" source="npm" spec="~1.1.6"/>
