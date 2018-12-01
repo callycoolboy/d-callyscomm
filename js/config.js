@@ -6,21 +6,23 @@ function codeAddress() {
  
 var duration = 7000;
     setTimeout(function() {
+	   checkNetConnection();
 $("#carl2").show();
 $("#carl").fadeOut( 1500 );
 $( "#lgif" ).fadeIn( 1000 );
 
 }, duration);
+
+//var duration2 = 70000;
+   // setTimeout(function() {  
+ //checkNetConnection();  
+ //}, duration2);
+	
 setTimeout(function() {
     $("#carl2").fadeOut( 1500 );
     $("#lgif").fadeOut( 1500 );
     $("#info").show();
 }, 15000);
-
-var duration2 = 70000;
-    setTimeout(function() {  
- checkNetConnection();  
- }, duration2);
 	 }
 window.onload = codeAddress;
 
