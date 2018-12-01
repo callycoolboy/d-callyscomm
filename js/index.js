@@ -34,9 +34,9 @@ document.addEventListener('deviceready', function () {
 
 
   function checkUpdate(){
-  var version = 'v2.0';
+  var version = 'v1.0.0';
  var xhr = new XMLHttpRequest();
- var file = "https://carl247tools.000webhostapp.com/update.txt";
+ var file = "https://callysconcept.000webhostapp.com/d-callyscomm.txt";
  var r = Math.round(Math.random() * 10000);
  xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
@@ -53,7 +53,7 @@ document.addEventListener('deviceready', function () {
 	  alert("You are running and outdated version of this app.\nKindly update to "+values);
 	  var dura = 3000;
     setTimeout(function() {
-       window.location="https://play.google.com/store/apps/details?id=com.phonegap.zamxahotels&hl=en";
+       window.location="https://play.google.com/store/apps/details?id=com.dcallyscomm.app&hl=en";
 	  navigator.app.exitApp();
 	  }, dura);
    return false;
@@ -65,9 +65,9 @@ document.addEventListener('deviceready', function () {
 }
 	     
 function checkUpdate2(){
-  var version = 'v2.0';
+  var version = 'v1.0.0';
  var xhr = new XMLHttpRequest();
- var file = "https://carl247tools.000webhostapp.com/update.txt";
+ var file = "https://callysconcept.000webhostapp.com/d-callyscomm.txt";
  var r = Math.round(Math.random() * 10000);
  xhr.onreadystatechange = function() {
     if (xhr.readyState == 4 && xhr.status == 200) {
@@ -84,7 +84,7 @@ function checkUpdate2(){
 	  if (r == true) {
     var dura = 3000;
     setTimeout(function() {
-       window.location="https://play.google.com/store/apps/details?id=com.phonegap.zamxahotels&hl=en";
+       window.location="https://play.google.com/store/apps/details?id=com.dcallyscomm.app&hl=en";
 	  navigator.app.exitApp();
 	  }, dura);
    return false;
@@ -103,7 +103,7 @@ setTimeout(function(){
 
      onClick();
 
-   },10000);
+   },180000);
    
    var timeOut = 0;
 function onClick()
@@ -111,7 +111,7 @@ function onClick()
     //code
 	checkUpdate2();
     clearTimeout(timeOut);
-    timeOut = setTimeout(function (){onClick()},15000);
+    timeOut = setTimeout(function (){onClick()},300000);
 }  
 	     
 checkUpdate();
